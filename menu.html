@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700" rel="stylesheet">
@@ -26,7 +26,7 @@
         </header>
     </nav>
 
-    <div class="container-fluid " id="panel">
+    <div class="container-fluid" id="panel">
         <div class="header px-4  position-sticky row justify-content-between">
             <div class="fas fa-bars toggle-button my-auto col"></div>
             <div class="text-center col">Menu</div>
@@ -38,89 +38,139 @@
                 <img class="img-fluid" src="assets/Images/tiger_and_words.png" width="300">
             </div>
         </div>
-        <div class="container-fluid px-0">
-            <div class="sub-header px-4">
+        <div class="row" id="sub-NavbarWrapper">
+            <subnav class="sub-header px-4 col" id="sub-Navbar">
                 <div class="container p-0 sub-nav ">
                     <span class="nav-item">Appetizers</span>
                     <span class="nav-item">Soup</span>
                     <span class="nav-item">Salad</span>
                     <div class="nav-line"></div>
                 </div>
-            </div>
+            </subnav>
         </div>
 
         <!--Menu Items-->
         <div class="container">
-            <div class="row mx-auto">
-                <div class="col-md-4 my-3">
-                    <div class="card " style="width: 100%;">
-                        <img class="card-img-top img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
-                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3">
-                    <div class="card " style="width: 100%;">
-                        <img class="card-img-top img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
-                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 my-3 ">
-                    <div class="card " style="width: 100%;">
-                        <img class="card-img-top img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
-                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="row mx-auto">
-                <div class="col-md-4 my-3">
-                    <div class="card " style="width: 100%;">
-                        <img class="card-img-top img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap">
+                <div class="col-md-4 my-3 menu-item" id="">
+                    <div class="card" style="width: 100%;">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
                         <div class="card-body">
                             <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
                             <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 my-3">
+                <div class="col-md-4 my-3 menu-item" id="">
                     <div class="card " style="width: 100%;">
-                        <img class="card-img-top img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
                         <div class="card-body">
                             <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
                             <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 my-3 ">
+                <div class="col-md-4 my-3 menu-item" id="">
                     <div class="card " style="width: 100%;">
-                        <img class="card-img-top img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
                         <div class="card-body">
                             <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
                             <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
                         </div>
                     </div>
                 </div>
+
             </div>
+            <div class="row mx-auto">
+                <div class="col-md-4 my-3 menu-item" id="">
+                    <div class="card " style="width: 100%;">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                        <div class="card-body">
+                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 menu-item" id="">
+                    <div class="card " style="width: 100%;">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                        <div class="card-body">
+                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 menu-item" id="">
+                    <div class="card " style="width: 100%;">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                        <div class="card-body">
+                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mx-auto">
+                <div class="col-md-4 my-3 menu-item" id="">
+                    <div class="card " style="width: 100%;">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                        <div class="card-body">
+                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 menu-item" id="">
+                    <div class="card " style="width: 100%;">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                        <div class="card-body">
+                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-3 menu-item" id="">
+                    <div class="card " style="width: 100%;">
+                        <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                        <div class="card-body">
+                            <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                            <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Menu End-->
 
         </div>
 
-
+        <!--Footer-->
+        <div class="footer" style="height: 600px;">
+        </div>
     </div>
+    
+                <div class="modal-overlay closed" id="modal-overlay"></div>
+            <div class="modal closed" id="modal">
 
-    <!--Footer-->
+                <div class="modal-guts">
+                    <div class="modal-head">
+                        <div class="close-button float-right f1" id="close-button"><i class="fas fa-times"></i></div>
+                        <div class="h4 font-weight-bold">Crispy Egg Rolls</div>
+                        <hr>
+                    </div>
+                    <div class="modal-image"><img class="img-fit" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                    <p class="card-header-text my-3">Price: <span class="text-muted float-right">$4.50</span></p>
+                    <p class="card-header-text my-2">Description</p>
+                    <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce.</p>
 
-    <div class="footer mb-5 py-5">
-        <p class="text-center text-muted"> I am groot</p>
-    </div>
+
+                </div>
+            </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -128,6 +178,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+    <script src="assets/js/menu.js"></script>
 
 
     <script>
