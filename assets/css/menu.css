@@ -1,0 +1,79 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    color: #2d2d2d;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.fas {}
+
+.header {
+    padding: 10px 0;
+    border-bottom: solid 1px #c5c5c5;
+    font-size: 1.2em
+}
+
+.sub-header {
+    margin: 10px 0;
+    padding: 10px 0 12px 0;
+    border-top: solid 1px rgba(79, 79, 79, 0.1);
+    border-bottom: solid 1px #c5c5c5;
+    font-weight: bold;
+}
+
+.sub-nav {
+    position: relative;
+}
+
+.nav-line {
+    background-color: #FE6934;
+    bottom: 0;
+    height: 3px;
+    width: 83px;
+    margin: -12px 0;
+    left: 0;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.nav-item {
+    font-size: 0.8em;
+    margin-right: 2%;
+}
+
+.nav-item:hover {
+    color: #FE471E;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    border: solid 1px #FE471E;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card-body {
+    padding: 10px 15px;
+    max-height: 80px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-header-text {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.7em;
+    letter-spacing: .05em;
+}
+
+.menutag {
+    margin-left: 48.3%
+}
