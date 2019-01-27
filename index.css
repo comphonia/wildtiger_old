@@ -1,5 +1,5 @@
 .hero-image {
-  background-image: url("assets/Images/Home-Page-4.jpg");
+  /* background-image: url("assets/Images/Home-Page-4.jpg"); */
   background-color: #cccccc;
   height: 580px;
   background-position: center;
@@ -73,3 +73,13 @@
   margin-bottom: 100px;
 }
 
+/* Slick styles*/
+
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 16px;
+  color: black;
+}
