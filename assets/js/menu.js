@@ -1,4 +1,5 @@
 $(function () {
+    'use strict';
 
     var body = document.querySelector("body");
     var modal = document.querySelector("#modal");
@@ -22,6 +23,9 @@ $(function () {
         menuItems[i].addEventListener("click", () => toggleModal());
     }
 
+    //--------------------------# 
+    //     Make Sticky Subnav   #
+    //--------------------------#
     var thisScroll = 0,
         lastScroll = 0;
     $(window).scroll(function () {
@@ -35,4 +39,29 @@ $(function () {
         }
         lastScroll = thisScroll;
     });
+
+    //--------------------------# 
+    // Sticky Subnav scrollspy   #
+    //--------------------------#
+    var section = document.querySelectorAll(".section");
+    var sections = {};
+    var i = 0;
+    
+    console.log(section)
+
+    Array.prototype.forEach.call(section, function (e) {
+        sections[e.id] = e.offsetTop;
+    });
+
+    window.onscroll = function () {
+        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+        for (i in sections) {
+            if (sections[i] <= scrollPosition ) {
+                document.querySelector('.nav-active').setAttribute('class', ' ');
+                document.querySelector('a[href*=' + i + ']').setAttribute('class', 'nav-active');
+            }
+        }
+    };
+
 })
