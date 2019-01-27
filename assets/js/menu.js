@@ -46,8 +46,6 @@ $(function () {
     var section = document.querySelectorAll(".section");
     var sections = {};
     var i = 0;
-    
-    console.log(section)
 
     Array.prototype.forEach.call(section, function (e) {
         sections[e.id] = e.offsetTop;
@@ -55,13 +53,16 @@ $(function () {
 
     window.onscroll = function () {
         var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
         for (i in sections) {
-            if (sections[i] <= scrollPosition ) {
-                document.querySelector('.nav-active').setAttribute('class', ' ');
-                document.querySelector('a[href*=' + i + ']').setAttribute('class', 'nav-active');
+            if (sections[i] <= scrollPosition +200) {
+                try {
+                    document.querySelectorAll('.nav-active')[1].classList.remove('nav-active')
+                    document.querySelectorAll('a[href*=' + i + ']')[1].classList.add('nav-active');
+                } catch (e) {}
             }
         }
     };
+    
+
 
 })

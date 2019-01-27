@@ -42,10 +42,24 @@
         <div class="row" id="sub-NavbarWrapper">
             <subnav class="sub-header px-4 col" id="sub-Navbar">
                 <div class="container p-0 sub-nav ">
-                    <span class="nav-item"><a class="nav-active" href="#appetizers">Appetizers</a></span>
-                    <span class="nav-item"><a href="#soup">Soup</a></span>
-                    <span class="nav-item"><a href="#salad">Salad</a></span>
-                    <div class="nav-line"></div>
+                  <span class="menu-items">  <span class="nav-item"><a class="nav-active" href="#appetizers">Appetizers</a></span>
+                        <span class="nav-item"><a href="#soup" class="">Soup</a></span>
+                        <span class="nav-item"><a href="#salad" class="">Salad</a></span></span>
+
+                    <span class="btn-group float-right mr-4">
+                        <button class="btn btn-light " type="button">
+                          <a href="#drinks" class="bar font-weight-bold">Drinks <i class="fas fa-wine-bottle f1-5"></i></a>
+                        </button>
+                        <button type="button" class="btn  dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Stir-Fried</a>
+                            <a class="dropdown-item" href="#">Noodles</a>
+                            <a class="dropdown-item" href="#">Noodle Soup</a>
+                        </div>
+                    </span>
+
                 </div>
             </subnav>
         </div>
@@ -154,6 +168,40 @@
 
                 </div>
             </section>
+            <!--Section-->
+            <section class="section" id="drinks">
+                <div class="h4 font-weight-bold col my-3">Drinks</div>
+                <div class="row mx-auto">
+                    <div class="col-md-4 menu-item my-3" id="">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                                <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3 menu-item" id="">
+                        <div class="card " style="width: 100%;">
+                            <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                                <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 my-3 menu-item" id="">
+                        <div class="card " style="width: 100%;">
+                            <div class="card-image"><img class="img-fluid" src="assets/Images/Middle-page-1.jpg" alt="Card image cap"></div>
+                            <div class="card-body">
+                                <p class="card-header-text">Crispy Egg Rolls <span class="text-muted float-right">$4.50</span></p>
+                                <p class="card-text text-muted">Silver noodle, taro, cabbage and carrot served with sweet &amp; sour plum sauce. dsdfdsfsdfsfds</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
 
             <!--Menu End-->
@@ -190,9 +238,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
     <script src="assets/js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
 
 
     <script>
+        //Init Slideout
         var slideout = new Slideout({
             'panel': document.getElementById('panel'),
             'menu': document.getElementById('menu'),
@@ -204,6 +254,9 @@
         document.querySelector('.toggle-button').addEventListener('click', function() {
             slideout.toggle();
         });
+
+        //Init smooth scroll
+        var scroll = new SmoothScroll('a[href*="#"]');
     </script>
 </body>
 
