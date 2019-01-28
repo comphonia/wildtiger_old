@@ -55,7 +55,7 @@
     font-size: 4rem;
 }
 
-.hours{
+.hours {
     font-family: initial;
     font-size: 1.5rem;
 }
@@ -79,13 +79,82 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
+/* Start With Our Stroy */
 
+.p_ourstroy {
+    border-bottom: 2px tomato solid;
+    font-weight: bold;
+}
 
+.p_ourstrory_description {
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
-  /* Start With Our Stroy */
+.our_story_design h2 {
+    font-family: Hipster;
+    color: rgb(255, 251, 30);
+    font-size: 5rem;
+    ;
+}
 
+.our_story_width {
+    font-family: Hipster;
+    font-size: 3rem;
+    position: relative;
+    top: -30px;
+    left: 50px;
+}
 
+.our_story_design h3 {
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+    top: -40px;
+}
 
+.hours_location {
+    font-family: Salamander;
+    color: #4b4b47;
+    font-size: 2.5rem;
+}
 
+footer {
+    background: #f8f9fa!important;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 576px) {
+    .display {
+        display: none;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (max-width: 768px) {
+    .display {
+        display: none;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .display {
+        display: none;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1000px) {
+    .our_story_design {
+        position: relative;
+        left: 100px;
+        top: 35px;
+    }
+}
