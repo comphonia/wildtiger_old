@@ -1,0 +1,91 @@
+/* Header */
+
+/* @media (min-width: 800px) {
+    .navbar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        text-align: center
+    }
+} */
+
+.hero-image {
+    background-color: #cccccc;
+    height: 580px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+@font-face {
+    font-family: Salamander;
+    src: url(Salamander\ Script\ Bold\ W01\ Rg/Salamander.woff);
+}
+
+.hero-text h2 {
+    font-family: Salamander;
+    font-size: 6rem;
+}
+
+@font-face {
+    font-family: Hipster;
+    src: url(Hipster\ Script\ Pro/Hipster.otf);
+}
+
+.hero-text h1 {
+    font-family: Hipster;
+    font-size: 9rem;
+    margin-top: 20px;
+}
+
+.ourTop {
+    font-family: Hipster;
+    font-size: 4rem;
+}
+
+.hours{
+    font-family: initial;
+    font-size: 1.5rem;
+}
+
+.hero-text {
+    color: rgb(255, 251, 30);
+}
+
+.hero-image:after {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 1.875rem;
+    content: "";
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 24' width='420' height='24' preserveAspectRatio='none'%3E%3Cg fill='%23fff'%3E%3Ccircle cy='43' r='37'/%3E%3Ccircle cx='41' cy='37' r='25'/%3E%3Ccircle cx='86' cy='45' r='36'/%3E%3Ccircle cx='125' cy='30' r='25'/%3E%3Ccircle cx='148' cy='41' r='25'/%3E%3Ccircle cx='200' cy='45' r='36'/%3E%3Ccircle cx='244' cy='27' r='25'/%3E%3Ccircle cx='280' cy='44' r='36'/%3E%3Ccircle cx='330' cy='47' r='36'/%3E%3Ccircle cx='372' cy='40' r='25'/%3E%3Ccircle cx='420' cy='43' r='37'/%3E%3Cpath shape-rendering='crispEdges' d='M0 23h420v1H0z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: -60% bottom;
+    background-size: 32.8125rem;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+  /* Start With Our Stroy */
+
+
+
+
