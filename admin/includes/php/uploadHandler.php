@@ -43,9 +43,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $uploadOk = 0;
         }
         // Check file size
-        if ($_FILES["fileToUpload"]["size"] > 500000) {
+        if ($_FILES["fileToUpload"]["size"] > 2000000) {
             $hasErrorMessage = true;
-            $error = "Sorry, your file is too large.";
+            $error = "Sorry, your file is too large. Max size is 2MB";
             $uploadOk = 0;
         }
         // Allow certain file formats
@@ -74,7 +74,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     if($isError == false){
         //Post to db
-         $sqlInterface->postMenuItem($name,$_FILES["fileToUpload"]["name"],number_format((float)$price, 2, '.', ''),$desc,$category);
+         $sqlInterface->postMenuItem($name,$_FILES["fileToUpload"]["name"],number_format((float)$price, 2, '.', ''),$desc,number_format($category));
     }
         $_SESSION["isError"] = $isError;
         $_SESSION["errorMessage"] = $error;

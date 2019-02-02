@@ -1,43 +1,8 @@
 <?php session_start(); ?>
-<!doctype html>
-<html lang="en">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <!--    <link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/admin.css">
-
-
-    <title>Admin | Wild Thai Restaurant &amp; Bar </title>
-</head>
-
-
-
-<body>
-    <div class="header">
-        <a href="#" id="menu-action">
-            <i class="fa fa-bars"></i>
-            <span>Close</span>
-        </a>
-        <a class="logo" href="index.html">
-            Admin
-        </a>
-    </div>
-    <div class="sidebar">
-        <ul>
-            <li><a href="#"><i class="fa fa-plus-square"></i><span>Add Menu Item</span></a></li>
-            <li><a href="#"><i class="fa fa-edit"></i><span>Edit Menu Item</span></a></li>
-            <li><a href="#"><i class="fa fa-file-export"></i><span>Manage data</span></a></li>
-        </ul>
-    </div>
-
+<?php include_once('includes/php/header.php');?>
+   
+   
     <!-- Content -->
     <div class="main">
         <div class="container">
@@ -73,11 +38,9 @@
                 <div class="form-group">
                     <label>Item Category:</label>
                     <select class="form-control" name="category">
-                        <option value="appetizer">Appetizers</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option value=1>Appetizers</option>
+                        <option value="2">Soup</option>
+                        <option value="3">Salad</option>
                     </select>
                 </div>
 
