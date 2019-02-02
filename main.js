@@ -15,3 +15,7 @@ window.scrollBy({
 document.querySelector('.ourTop').scrollIntoView({
   behavior: 'smooth'
 });
+
+$('.hello').slick({
+  dots: true
+});
