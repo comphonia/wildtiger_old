@@ -37,6 +37,7 @@
 .hero-text h2 {
     font-family: Salamander;
     font-size: 6rem;
+    text-shadow: 30px 20px 10px #9b9688;
 }
 
 @font-face {
@@ -48,6 +49,7 @@
     font-family: Hipster;
     font-size: 9rem;
     margin-top: 20px;
+    text-shadow: 60px 40px 10px #9b9688;
 }
 
 .ourTop {
@@ -170,6 +172,15 @@ footer {
     position: relative;
 }
 
+.imageb {
+    background-image: url('assets/Images/contact_us.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .slick-active {
     border: none;
 }
@@ -182,4 +193,57 @@ footer {
     color: white;
     opacity: .50;
     font-size: 10px;
+}
+
+/* Contact Page */
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 0.80;
+}
+
+.focus:focus {
+    display: inline-block;
+    border: 3px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 0.90;
+}
+
+input[type=submit] {
+    width: 80%;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.80;
+}
+
+textarea {
+    width: 80%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    opacity: 0.80;
+
+}
+
+input[type=submit] {
+    background-color: #45a049;
+}
+
+.nav-item:hover{
+    border: 2px green solid;
 }
